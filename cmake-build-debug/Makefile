@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Robert\CLionProjects\system_kolejkowy
+CMAKE_SOURCE_DIR = C:\Users\Robert\CLionProjects\SystemKolejkowy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug\CMakeFiles C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug\CMakeFiles C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named system_kolejkowy
+# Target rules for targets named SystemKolejkowy
 
 # Build rule for target.
-system_kolejkowy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 system_kolejkowy
-.PHONY : system_kolejkowy
+SystemKolejkowy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SystemKolejkowy
+.PHONY : SystemKolejkowy
 
 # fast build rule for target.
-system_kolejkowy/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\system_kolejkowy.dir\build.make CMakeFiles/system_kolejkowy.dir/build
-.PHONY : system_kolejkowy/fast
+SystemKolejkowy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SystemKolejkowy.dir\build.make CMakeFiles/SystemKolejkowy.dir/build
+.PHONY : SystemKolejkowy/fast
 
 main.obj: main.cpp.obj
 
@@ -148,7 +148,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\system_kolejkowy.dir\build.make CMakeFiles/system_kolejkowy.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SystemKolejkowy.dir\build.make CMakeFiles/SystemKolejkowy.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -157,7 +157,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\system_kolejkowy.dir\build.make CMakeFiles/system_kolejkowy.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SystemKolejkowy.dir\build.make CMakeFiles/SystemKolejkowy.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -166,7 +166,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\system_kolejkowy.dir\build.make CMakeFiles/system_kolejkowy.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SystemKolejkowy.dir\build.make CMakeFiles/SystemKolejkowy.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -177,7 +177,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... system_kolejkowy
+	@echo ... SystemKolejkowy
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
-project(system_kolejkowy)
+project(SystemKolejkowy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(system_kolejkowy main.cpp)
+add_executable(SystemKolejkowy main.cpp)

@@ -63,16 +63,16 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Robert\CLionProjects\system_kolejkowy
+CMAKE_SOURCE_DIR = C:\Users\Robert\CLionProjects\SystemKolejkowy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/system_kolejkowy.dir/all
+all: CMakeFiles/SystemKolejkowy.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/system_kolejkowy.dir/clean
+clean: CMakeFiles/SystemKolejkowy.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/system_kolejkowy.dir
+# Target rules for target CMakeFiles/SystemKolejkowy.dir
 
 # All Build rule for target.
-CMakeFiles/system_kolejkowy.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\system_kolejkowy.dir\build.make CMakeFiles/system_kolejkowy.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\system_kolejkowy.dir\build.make CMakeFiles/system_kolejkowy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target system_kolejkowy"
-.PHONY : CMakeFiles/system_kolejkowy.dir/all
+CMakeFiles/SystemKolejkowy.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SystemKolejkowy.dir\build.make CMakeFiles/SystemKolejkowy.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SystemKolejkowy.dir\build.make CMakeFiles/SystemKolejkowy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target SystemKolejkowy"
+.PHONY : CMakeFiles/SystemKolejkowy.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/system_kolejkowy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/system_kolejkowy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\system_kolejkowy\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/system_kolejkowy.dir/rule
+CMakeFiles/SystemKolejkowy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SystemKolejkowy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Robert\CLionProjects\SystemKolejkowy\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/SystemKolejkowy.dir/rule
 
 # Convenience name for target.
-system_kolejkowy: CMakeFiles/system_kolejkowy.dir/rule
+SystemKolejkowy: CMakeFiles/SystemKolejkowy.dir/rule
 
-.PHONY : system_kolejkowy
+.PHONY : SystemKolejkowy
 
 # clean rule for target.
-CMakeFiles/system_kolejkowy.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\system_kolejkowy.dir\build.make CMakeFiles/system_kolejkowy.dir/clean
-.PHONY : CMakeFiles/system_kolejkowy.dir/clean
+CMakeFiles/SystemKolejkowy.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SystemKolejkowy.dir\build.make CMakeFiles/SystemKolejkowy.dir/clean
+.PHONY : CMakeFiles/SystemKolejkowy.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
