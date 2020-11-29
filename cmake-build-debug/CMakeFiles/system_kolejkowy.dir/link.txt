@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/system_kolejkowy.dir/main.cpp.o  -o system_kolejkowy 

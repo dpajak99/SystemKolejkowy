@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SystemKolejkowy.dir/QueuingSystem.cpp.obj"
-  "CMakeFiles/SystemKolejkowy.dir/main.cpp.obj"
-  "SystemKolejkowy.exe"
-  "SystemKolejkowy.exe.manifest"
+  "CMakeFiles/SystemKolejkowy.dir/QueuingSystem.cpp.o"
+  "CMakeFiles/SystemKolejkowy.dir/main.cpp.o"
+  "SystemKolejkowy"
   "SystemKolejkowy.pdb"
-  "libSystemKolejkowy.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

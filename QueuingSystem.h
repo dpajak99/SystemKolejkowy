@@ -5,11 +5,9 @@ class QueuingSystem {
 private:
     double lambda, my, c1, c2;
     int m;
-    double rho, averageV, averageTf, averageN, averageTs, averageMnz;
+    double rho, averageV, averageTf, averageN, averageTs, averageMnz, p0;
 public:
-    QueuingSystem ();
     QueuingSystem (double, double, double, double, int);
-    ~QueuingSystem();
 
     double getLambda () const;
     double getMy () const;
@@ -30,7 +28,10 @@ public:
     double calcAverageN () const;
     double calcAverageTs () const;
     double calcAverageMnz () const;
-    double getProbability (int);
+    double getProbability (int) const;
+
+    static bool isMCorrect(int);
+    static bool isLambdaCorrect(double, int, double );
 };
 
 #endif //SYSTEMKOLEJKOWY_QUEUINGSYSTEM_H

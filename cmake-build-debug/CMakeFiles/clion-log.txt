@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Robert\CLionProjects\SystemKolejkowy
+/home/dominik/Pulpit/Software/clion-2020.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Robert/CLionProjects/SystemKolejkowy/cmake-build-debug
+-- Build files have been written to: /home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/cmake-build-debug

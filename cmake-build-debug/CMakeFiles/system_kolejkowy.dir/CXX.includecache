@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/QueuingSystem.cpp
-QueuingSystem.h
-/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/QueuingSystem.h
-cmath
--
-
 /home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/QueuingSystem.h
 
 /home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/main.cpp

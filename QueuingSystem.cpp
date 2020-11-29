@@ -1,52 +1,21 @@
 #include "QueuingSystem.h"
 #include <cmath>
 
-QueuingSystem::QueuingSystem() {
-    lambda = 1;
-    my = 1;
-    c1 = 1;
-    c2 = 1;
-    m = 1;
-    rho = calcRho();
-    averageV = calcAverageV();
-    averageTf = calcAverageTf();
-    averageN = calcAverageN();
-    averageTs = calcAverageTs();
-    averageMnz = calcAverageMnz();
-}
-
 QueuingSystem::QueuingSystem(double _lambda, double _my, double _c1, double _c2, int _m) {
-    if (_m >= 1) {
-        if (_lambda < (_m * _my)) {
-            if (((_lambda/_my) / _m) < 1) {
-                lambda = _lambda;
-                my = _my;
-                c1 = _c1;
-                c2 = _c2;
-                m = _m;
-                rho = calcRho();
-                averageV = calcAverageV();
-                averageTf = calcAverageTf();
-                averageN = calcAverageN();
-                averageTs = calcAverageTs();
-                averageMnz = calcAverageMnz();
-            }
-        }
+    if ( isMCorrect( _m ) && isLambdaCorrect(_lambda, _m, _my)) {
+        lambda = _lambda;
+        my = _my;
+        c1 = _c1;
+        c2 = _c2;
+        m = _m;
+        rho = calcRho();
+        averageV = calcAverageV();
+        averageTf = calcAverageTf();
+        averageN = calcAverageN();
+        averageTs = calcAverageTs();
+        averageMnz = calcAverageMnz();
+        p0 = getProbability(0);
     }
-}
-
-QueuingSystem::~QueuingSystem() {
-    lambda = NULL;
-    my = NULL;
-    c1 = NULL;
-    c2 = NULL;
-    m = NULL;
-    rho = NULL;
-    averageV = NULL;
-    averageTf = NULL;
-    averageN = NULL;
-    averageTs = NULL;
-    averageMnz = NULL;
 }
 
 double QueuingSystem::getLambda() const {
@@ -93,6 +62,26 @@ double QueuingSystem::getAverageMnz() const {
     return averageMnz;
 }
 
+double QueuingSystem::calcRho() const {
+    return lambda / my;
+}
+
+double QueuingSystem::calcAverageTf() const {
+    return averageV / lambda;
+}
+
+double QueuingSystem::calcAverageN() const {
+    return averageV + rho;
+}
+
+double QueuingSystem::calcAverageTs() const {
+    return averageN / lambda;
+}
+
+double QueuingSystem::calcAverageMnz() const {
+    return m - rho;
+}
+
 int QueuingSystem::factorial(int k) {
     int j = 1;
     for (int i = 1; i < k; i++) {
@@ -101,50 +90,44 @@ int QueuingSystem::factorial(int k) {
     return j;
 }
 
-double QueuingSystem::calcRho() const {
-    return lambda/my;
-}
-
 double QueuingSystem::calcAverageV() const {
-    double numeral = (pow(rho, (m+1))/pow((m-rho), 2)*factorial(m-1));
+    double numeral = (pow(rho, (m + 1)) / pow((m - rho), 2) * factorial(m - 1));
     double sum = 0;
-    for (int i = 0; i <= (m-1); i++) {
-        sum += pow(rho, i)/factorial(i);
+    for (int i = 0; i <= (m - 1); i++) {
+        sum += pow(rho, i) / factorial(i);
     }
-    double nominative = sum + (pow(rho, m)/(factorial(m-1)*(m-rho)));
-    double result = numeral/nominative;
+    double nominative = sum + (pow(rho, m) / (factorial(m - 1) * (m - rho)));
+    double result = numeral / nominative;
 
     return result;
 }
 
-double QueuingSystem::calcAverageTf() const {
-    return averageV/lambda;
-}
-
-double QueuingSystem::calcAverageN() const {
-    return averageV+rho;
-}
-
-double QueuingSystem::calcAverageTs() const {
-    return averageN/lambda;
-}
-
-double QueuingSystem::calcAverageMnz() const {
-    return m - rho;
-}
-
-double QueuingSystem::getProbability(int j) {
+double QueuingSystem::getProbability(int j) const {
     if (j == 0) {
         double nominal = m - rho;
         double sum = 0;
-        for (int i = 0; i <= (m-1); i++) {
-            sum += (m-j)*pow(rho, j)/factorial(j);
+        for (int i = 0; i <= (m - 1); i++) {
+            sum += (m - i) * pow(rho, i) / factorial(i);
         }
-        double result = nominal/sum;
-
+        double result = nominal / sum;
         return result;
     } else if (j >= 1 && j <= m) {
-        return pow(rho, j)/factorial(j)*getProbability(0);
+        return pow(rho, j) / factorial(j) * p0;
     }
-    return NULL;
+    return 0.0;
 }
+
+bool QueuingSystem::isMCorrect( int _m ) {
+    if( _m >= 1 ) {
+        return true;
+    }
+    return false;
+}
+
+bool QueuingSystem::isLambdaCorrect(double _lambda, int _m, double _my) {
+    if(_lambda < (_m * _my) && ((_lambda / _my) / _m) < 1) {
+        return true;
+    }
+    return false;
+}
+
