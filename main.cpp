@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 #include "QueuingSystem.h"
 
 int main() {
@@ -9,6 +8,12 @@ int main() {
             std::cout << "C1: " << q1.getC1() << std::endl;
             std::cout << "C2: " << q1.getC2() << std::endl;
             std::cout << "m: " << q1.getM() << std::endl;
+            std::cout << "rho: " << q1.getRho() << std::endl;
+            std::cout << "averageV: " << q1.getAverageV() << std::endl;
+            std::cout << "averageTf: " << q1.getAverageTf() << std::endl;
+            std::cout << "averageN: " << q1.getAverageN() << std::endl;
+            std::cout << "averageTs: " << q1.getAverageTs() << std::endl;
+            std::cout << "averageMnz: " << q1.getAverageMnz() << std::endl;
             std::cout << "Srednia liczba zajetych kanalow obslugi: " << q1.getRho() << std::endl;
             std::cout << "Srednia liczba zgloszen w kolejce: " << q1.getAverageV() << std::endl;
             std::cout << "Sredni czas oczekiwania zgloszenia w kolejce: " << q1.getAverageTf() << std::endl;

@@ -5,7 +5,7 @@ class QueuingSystem {
 private:
     double lambda, my, c1, c2;
     int m;
-    double rho;
+    double rho, averageV, averageTf, averageN, averageTs, averageMnz;
 public:
     QueuingSystem ();
     QueuingSystem (double, double, double, double, int);
@@ -16,13 +16,20 @@ public:
     double getC1 () const;
     double getC2 () const;
     double getM () const;
-    static int factorial (int);
     double getRho () const;
     double getAverageV () const;
     double getAverageTf () const;
     double getAverageN () const;
     double getAverageTs () const;
     double getAverageMnz () const;
+
+    static int factorial (int);
+    double calcRho () const;
+    double calcAverageV () const;
+    double calcAverageTf () const;
+    double calcAverageN () const;
+    double calcAverageTs () const;
+    double calcAverageMnz () const;
     double getProbability (int);
 };
 

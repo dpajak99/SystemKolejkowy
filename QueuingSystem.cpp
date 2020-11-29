@@ -7,7 +7,12 @@ QueuingSystem::QueuingSystem() {
     c1 = 1;
     c2 = 1;
     m = 1;
-    rho = getRho();
+    rho = calcRho();
+    averageV = calcAverageV();
+    averageTf = calcAverageTf();
+    averageN = calcAverageN();
+    averageTs = calcAverageTs();
+    averageMnz = calcAverageMnz();
 }
 
 QueuingSystem::QueuingSystem(double _lambda, double _my, double _c1, double _c2, int _m) {
@@ -19,7 +24,12 @@ QueuingSystem::QueuingSystem(double _lambda, double _my, double _c1, double _c2,
                 c1 = _c1;
                 c2 = _c2;
                 m = _m;
-                rho = getRho();
+                rho = calcRho();
+                averageV = calcAverageV();
+                averageTf = calcAverageTf();
+                averageN = calcAverageN();
+                averageTs = calcAverageTs();
+                averageMnz = calcAverageMnz();
             }
         }
     }
@@ -31,6 +41,12 @@ QueuingSystem::~QueuingSystem() {
     c1 = NULL;
     c2 = NULL;
     m = NULL;
+    rho = NULL;
+    averageV = NULL;
+    averageTf = NULL;
+    averageN = NULL;
+    averageTs = NULL;
+    averageMnz = NULL;
 }
 
 double QueuingSystem::getLambda() const {
@@ -53,6 +69,30 @@ double QueuingSystem::getM() const {
     return m;
 }
 
+double QueuingSystem::getRho() const {
+    return m;
+}
+
+double QueuingSystem::getAverageV() const {
+    return averageV;
+}
+
+double QueuingSystem::getAverageTf() const {
+    return averageTf;
+}
+
+double QueuingSystem::getAverageN() const {
+    return averageN;
+}
+
+double QueuingSystem::getAverageTs() const {
+    return averageTs;
+}
+
+double QueuingSystem::getAverageMnz() const {
+    return averageMnz;
+}
+
 int QueuingSystem::factorial(int k) {
     int j = 1;
     for (int i = 1; i < k; i++) {
@@ -61,11 +101,11 @@ int QueuingSystem::factorial(int k) {
     return j;
 }
 
-double QueuingSystem::getRho() const {
+double QueuingSystem::calcRho() const {
     return lambda/my;
 }
 
-double QueuingSystem::getAverageV() const {
+double QueuingSystem::calcAverageV() const {
     double numeral = (pow(rho, (m+1))/pow((m-rho), 2)*factorial(m-1));
     double sum = 0;
     for (int i = 0; i <= (m-1); i++) {
@@ -77,19 +117,19 @@ double QueuingSystem::getAverageV() const {
     return result;
 }
 
-double QueuingSystem::getAverageTf() const {
-    return getAverageV()/lambda;
+double QueuingSystem::calcAverageTf() const {
+    return averageV/lambda;
 }
 
-double QueuingSystem::getAverageN() const {
-    return getAverageV()+rho;
+double QueuingSystem::calcAverageN() const {
+    return averageV+rho;
 }
 
-double QueuingSystem::getAverageTs() const {
-    return getAverageN()/lambda;
+double QueuingSystem::calcAverageTs() const {
+    return averageN/lambda;
 }
 
-double QueuingSystem::getAverageMnz() const {
+double QueuingSystem::calcAverageMnz() const {
     return m - rho;
 }
 
@@ -104,7 +144,7 @@ double QueuingSystem::getProbability(int j) {
 
         return result;
     } else if (j >= 1 && j <= m) {
-        return pow(getRho(), j)/factorial(j)*getProbability(0);
+        return pow(rho, j)/factorial(j)*getProbability(0);
     }
     return NULL;
 }

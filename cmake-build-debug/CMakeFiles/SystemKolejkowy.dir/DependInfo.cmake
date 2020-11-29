@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/main.cpp" "/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/cmake-build-debug/CMakeFiles/SystemKolejkowy.dir/main.cpp.o"
+  "C:/Users/Robert/CLionProjects/SystemKolejkowy/QueuingSystem.cpp" "C:/Users/Robert/CLionProjects/SystemKolejkowy/cmake-build-debug/CMakeFiles/SystemKolejkowy.dir/QueuingSystem.cpp.obj"
+  "C:/Users/Robert/CLionProjects/SystemKolejkowy/main.cpp" "C:/Users/Robert/CLionProjects/SystemKolejkowy/cmake-build-debug/CMakeFiles/SystemKolejkowy.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

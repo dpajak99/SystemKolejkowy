@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/main.cpp
-iostream
--
+C:/Users/Robert/CLionProjects/SystemKolejkowy/QueuingSystem.cpp
+QueuingSystem.h
+C:/Users/Robert/CLionProjects/SystemKolejkowy/QueuingSystem.h
 cmath
 -
+
+C:/Users/Robert/CLionProjects/SystemKolejkowy/QueuingSystem.h
+
+C:/Users/Robert/CLionProjects/SystemKolejkowy/main.cpp
+iostream
+-
+QueuingSystem.h
+C:/Users/Robert/CLionProjects/SystemKolejkowy/QueuingSystem.h
 
