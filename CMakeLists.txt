@@ -3,4 +3,12 @@ project(SystemKolejkowy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SystemKolejkowy main.cpp)
+set(PROJECT_HEADERS
+        QueuingSystem.h
+        )
+set(PROJECT_SOURCES
+        main.cpp
+        QueuingSystem.cpp
+        )
+
+add_executable(SystemKolejkowy ${PROJECT_SOURCES} ${PROJECT_HEADERS})
