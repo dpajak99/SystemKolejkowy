@@ -23,6 +23,5 @@ int main() {
             std::cout << "f(m) = " << q1.getC1() << " * " << q1.getAverageV() << " + " << q1.getC2() << " * " << q1.getAverageMnz() << std::endl;
             std::cout << "Prawdopodbienstwo, ze system jest pusty: " << q1.getProbability(0) << std::endl;
             std::cout << "Prawdopodbienstwo, ze system jest pusty: " << q1.getProbability(1) << std::endl;
-
     return 0;
 }
