@@ -1,0 +1,3 @@
+/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dominik/Pulpit/github/PWSZ-TARNOW/SystemKolejkowy/cmake-build-debug/CMakeFiles/SystemKolejkowy.dir

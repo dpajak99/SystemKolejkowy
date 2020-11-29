@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/SystemKolejkowy.dir/main.cpp.o CMakeFiles/SystemKolejkowy.dir/QueuingSystem.cpp.o  -o SystemKolejkowy 
