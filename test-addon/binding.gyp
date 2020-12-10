@@ -1,13 +1,12 @@
 {
     "targets": [{
-        "target_name": "testaddon",
+        "target_name": "SystemKolejkowy",
         "cflags!": [ "-fno-exceptions" ],
         "cflags_cc!": [ "-fno-exceptions" ],
         "sources": [
-            "cppsrc/main.cpp",
-            "cppsrc/Samples/functionexample.cpp",
-            "cppsrc/Samples/actualclass.cpp",
-            "cppsrc/Samples/classexample.cpp"
+            "../main.cpp",
+            "../QueuingSystem.cpp",
+            "../QueuingSystem.h",
         ],
         'include_dirs': [
             "<!@(node -p \"require('node-addon-api').include\")"
