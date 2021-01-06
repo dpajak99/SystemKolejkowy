@@ -1,6 +1,10 @@
 #include "QueuingSystem.h"
 #include <cmath>
 
+/**
+Próba generalna pusha!
+*/
+
 QueuingSystem::QueuingSystem(double _lambda, double _my, double _c1, double _c2, int _m) {
     if ( isMCorrect( _m ) && isLambdaCorrect(_lambda, _m, _my)) {
         lambda = _lambda;
