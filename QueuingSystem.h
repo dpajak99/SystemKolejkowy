@@ -1,3 +1,8 @@
+/**
+Deklaracja klasy i jej elementów obliczaj¹ca wszystkie wszystkie parametry systemu kolejkowego na podstawie podanych
+parametrów: lamba, my, c1, c2 i m.
+*/
+
 #ifndef SYSTEMKOLEJKOWY_QUEUINGSYSTEM_H
 #define SYSTEMKOLEJKOWY_QUEUINGSYSTEM_H
 
